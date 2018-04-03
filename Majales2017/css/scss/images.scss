@@ -1,0 +1,26 @@
+$max_responsive_width: 2000px;
+$item_width: 200px;
+$min_padding: 10px;
+$width_around: 30px;
+$max_item_heigth: 200px;
+
+.sponsor-grid {
+	@for $i from 1 through $max_responsive_width/$item_width {
+		@media (min-width: ($item_width + 2 * $min_padding) * $i + $width_around) {
+			.item {
+				float: left;
+				width: percentage(1/$i);
+				height: $max_item_heigth;
+			}
+		}
+	}
+  .container {
+					width: $item_width;
+          margin: auto;
+          img {
+              width: percentage(1);
+              height: auto;
+          }
+			}
+  
+}

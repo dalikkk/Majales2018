@@ -1,0 +1,16 @@
+/* SCSS Document */
+
+#logo {
+    position:relative;
+    width: 18%;
+    left: 5%;
+    top: 5%;
+    
+    #logo {
+        position: absolute;
+        width: 400px;
+        top: 50px;
+        left: 100px;
+        z-index: 1;
+    }
+}
